@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import com.Exception.DataLayerException;
 import com.Util.Util;
 import com.beanclass.Leave;
 
@@ -41,7 +42,7 @@ public class DAO {
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			throw new DataLayerException(e.getMessage());
 		}
 		return result;
 	}
@@ -65,7 +66,7 @@ public class DAO {
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			throw new DataLayerException(e.getMessage());
 		}
 		return result;
 	}
@@ -96,7 +97,7 @@ public class DAO {
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			throw new DataLayerException(e.getMessage());
 		}
 		return result;
 	}
@@ -115,7 +116,7 @@ public class DAO {
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			throw new DataLayerException(e.getMessage());
 		}
 		return result;
 	
@@ -148,7 +149,7 @@ public class DAO {
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			throw new DataLayerException(e.getMessage());
 		}
 		return result;
 	}
